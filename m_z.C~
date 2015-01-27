@@ -1,0 +1,13 @@
+m_z(){
+
+  Int_t   which        = 0;
+  TString m_z_d_str[7] = { "0", "50", "75", "100", "125", "150", "500" }; 
+  Float_t m_z_d    [7] = {  0.,  50.,  75.,  100.,  125.,  150.,  500.,};
+  TString filename     = "moller_";
+
+  filename.Append(m_z_d_str[which]);
+  filename.Append(".root");
+
+  cout << filename << endl;
+
+}
